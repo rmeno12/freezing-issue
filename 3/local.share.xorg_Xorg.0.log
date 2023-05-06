@@ -1,0 +1,1030 @@
+[    40.193] (--) Log file renamed from "/home/rahul/.local/share/xorg/Xorg.pid-1202.log" to "/home/rahul/.local/share/xorg/Xorg.0.log"
+[    40.194] 
+X.Org X Server 1.21.1.8
+X Protocol Version 11, Revision 0
+[    40.194] Current Operating System: Linux hoth 6.1.26-1-lts #1 SMP PREEMPT_DYNAMIC Wed, 26 Apr 2023 19:15:42 +0000 x86_64
+[    40.194] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux-lts root=UUID=68473d52-e2b6-40b1-8a4a-49a85bc2fd1d rw loglevel=3 nvidia_drm.modeset=1 acpi_enforce_resources=lax
+[    40.194]  
+[    40.194] Current version of pixman: 0.42.2
+[    40.194] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    40.194] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    40.194] (==) Log file: "/home/rahul/.local/share/xorg/Xorg.0.log", Time: Sat May  6 08:36:15 2023
+[    40.194] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    40.194] (==) No Layout section.  Using the first Screen section.
+[    40.194] (==) No screen section available. Using defaults.
+[    40.194] (**) |-->Screen "Default Screen Section" (0)
+[    40.194] (**) |   |-->Monitor "<default monitor>"
+[    40.194] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    40.194] (==) Automatically adding devices
+[    40.194] (==) Automatically enabling devices
+[    40.194] (==) Automatically adding GPU devices
+[    40.194] (==) Automatically binding GPU devices
+[    40.194] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    40.194] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[    40.194] 	Entry deleted from font path.
+[    40.194] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/TTF".
+[    40.194] 	Entry deleted from font path.
+[    40.194] 	(Run 'mkfontdir' on "/usr/share/fonts/TTF").
+[    40.194] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[    40.194] 	Entry deleted from font path.
+[    40.194] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    40.194] 	Entry deleted from font path.
+[    40.194] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[    40.194] 	Entry deleted from font path.
+[    40.194] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[    40.194] 	Entry deleted from font path.
+[    40.194] (==) FontPath set to:
+	
+[    40.194] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    40.194] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    40.194] (II) Module ABI versions:
+[    40.194] 	X.Org ANSI C Emulation: 0.4
+[    40.194] 	X.Org Video Driver: 25.2
+[    40.194] 	X.Org XInput driver : 24.4
+[    40.194] 	X.Org Server Extension : 10.0
+[    40.195] (++) using VT number 2
+
+[    40.195] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_33
+[    40.196] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    40.196] (II) Platform probe for /sys/devices/pci0000:00/0000:00:01.1/0000:01:00.0/drm/card0
+[    40.196] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 14 paused 0
+[    40.197] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/nvidia/xorg,/usr/lib/xorg/modules,/usr/lib/xorg/modules"
+[    40.198] (--) PCI:*(1@0:0:0) 10de:1e87:1458:37a7 rev 161, Mem @ 0xfb000000/16777216, 0xfcc0000000/268435456, 0xfcd0000000/33554432, I/O @ 0x0000f000/128, BIOS @ 0x????????/524288
+[    40.198] (--) PCI: (16@0:0:0) 1002:164e:1462:7d78 rev 195, Mem @ 0xfce0000000/268435456, 0xfcf0000000/2097152, 0xfca00000/524288, I/O @ 0x0000d000/256
+[    40.198] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[    40.198] (II) LoadModule: "glx"
+[    40.198] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    40.199] (II) Module glx: vendor="X.Org Foundation"
+[    40.199] 	compiled for 1.21.1.8, module version = 1.0.0
+[    40.199] 	ABI class: X.Org Server Extension, version 10.0
+[    40.199] (II) Applying OutputClass "nvidia" to /dev/dri/card0
+[    40.199] 	loading driver: nvidia
+[    40.199] (==) Matched nvidia as autoconfigured driver 0
+[    40.199] (==) Matched nouveau as autoconfigured driver 1
+[    40.199] (==) Matched nv as autoconfigured driver 2
+[    40.199] (==) Matched modesetting as autoconfigured driver 3
+[    40.199] (==) Matched fbdev as autoconfigured driver 4
+[    40.199] (==) Matched vesa as autoconfigured driver 5
+[    40.199] (==) Assigned the driver to the xf86ConfigLayout
+[    40.199] (II) LoadModule: "nvidia"
+[    40.199] (II) Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so
+[    40.201] (II) Module nvidia: vendor="NVIDIA Corporation"
+[    40.201] 	compiled for 1.6.99.901, module version = 1.0.0
+[    40.201] 	Module class: X.Org Video Driver
+[    40.201] (II) LoadModule: "nouveau"
+[    40.201] (WW) Warning, couldn't open module nouveau
+[    40.201] (EE) Failed to load module "nouveau" (module does not exist, 0)
+[    40.201] (II) LoadModule: "nv"
+[    40.201] (WW) Warning, couldn't open module nv
+[    40.201] (EE) Failed to load module "nv" (module does not exist, 0)
+[    40.201] (II) LoadModule: "modesetting"
+[    40.201] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    40.202] (II) Module modesetting: vendor="X.Org Foundation"
+[    40.202] 	compiled for 1.21.1.8, module version = 1.21.1
+[    40.202] 	Module class: X.Org Video Driver
+[    40.202] 	ABI class: X.Org Video Driver, version 25.2
+[    40.202] (II) LoadModule: "fbdev"
+[    40.202] (WW) Warning, couldn't open module fbdev
+[    40.202] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    40.202] (II) LoadModule: "vesa"
+[    40.202] (WW) Warning, couldn't open module vesa
+[    40.202] (EE) Failed to load module "vesa" (module does not exist, 0)
+[    40.202] (II) NVIDIA dlloader X Driver  530.41.03  Thu Mar 16 19:25:45 UTC 2023
+[    40.202] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    40.202] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    40.202] (II) systemd-logind: releasing fd for 226:0
+[    40.203] (II) Loading sub module "fb"
+[    40.203] (II) LoadModule: "fb"
+[    40.203] (II) Module "fb" already built-in
+[    40.203] (II) Loading sub module "wfb"
+[    40.203] (II) LoadModule: "wfb"
+[    40.203] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[    40.203] (II) Module wfb: vendor="X.Org Foundation"
+[    40.203] 	compiled for 1.21.1.8, module version = 1.0.0
+[    40.203] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    40.203] (WW) Falling back to old probe method for modesetting
+[    40.203] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    40.203] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    40.203] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[    40.203] (==) NVIDIA(0): RGB weight 888
+[    40.203] (==) NVIDIA(0): Default visual is TrueColor
+[    40.203] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[    40.203] (II) Applying OutputClass "nvidia" options to /dev/dri/card0
+[    40.203] (**) NVIDIA(0): Option "AllowEmptyInitialConfiguration"
+[    40.203] (**) NVIDIA(0): Enabling 2D acceleration
+[    40.203] (II) Loading sub module "glxserver_nvidia"
+[    40.203] (II) LoadModule: "glxserver_nvidia"
+[    40.203] (II) Loading /usr/lib/nvidia/xorg/libglxserver_nvidia.so
+[    40.216] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[    40.216] 	compiled for 1.6.99.901, module version = 1.0.0
+[    40.216] 	Module class: X.Org Server Extension
+[    40.216] (II) NVIDIA GLX Module  530.41.03  Thu Mar 16 19:27:05 UTC 2023
+[    40.216] (II) NVIDIA: The X server supports PRIME Render Offload.
+[    40.217] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:1:0:0
+[    40.217] (--) NVIDIA(0):     DFP-0
+[    40.217] (--) NVIDIA(0):     DFP-1
+[    40.217] (--) NVIDIA(0):     DFP-2
+[    40.217] (--) NVIDIA(0):     DFP-3 (boot)
+[    40.217] (--) NVIDIA(0):     DFP-4
+[    40.217] (--) NVIDIA(0):     DFP-5
+[    40.217] (--) NVIDIA(0):     DFP-6
+[    40.217] (--) NVIDIA(0):     DFP-7
+[    40.217] (II) NVIDIA(0): NVIDIA GPU NVIDIA GeForce RTX 2080 (TU104-A) at PCI:1:0:0
+[    40.217] (II) NVIDIA(0):     (GPU-0)
+[    40.217] (--) NVIDIA(0): Memory: 8388608 kBytes
+[    40.217] (--) NVIDIA(0): VideoBIOS: 90.04.0b.80.65
+[    40.217] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[    40.217] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    40.217] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    40.217] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[    40.217] (--) NVIDIA(GPU-0): 
+[    40.217] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    40.218] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    40.218] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    40.218] (--) NVIDIA(GPU-0): 
+[    40.263] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): connected
+[    40.263] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): Internal TMDS
+[    40.263] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): 600.0 MHz maximum pixel clock
+[    40.263] (--) NVIDIA(GPU-0): 
+[    40.263] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): connected
+[    40.263] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): Internal DisplayPort
+[    40.263] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): 2660.0 MHz maximum pixel clock
+[    40.263] (--) NVIDIA(GPU-0): 
+[    40.265] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    40.265] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    40.265] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    40.265] (--) NVIDIA(GPU-0): 
+[    40.265] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    40.265] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    40.265] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    40.265] (--) NVIDIA(GPU-0): 
+[    40.265] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    40.265] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    40.265] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    40.265] (--) NVIDIA(GPU-0): 
+[    40.265] (--) NVIDIA(GPU-0): DFP-7: disconnected
+[    40.265] (--) NVIDIA(GPU-0): DFP-7: Internal DisplayPort
+[    40.265] (--) NVIDIA(GPU-0): DFP-7: 2660.0 MHz maximum pixel clock
+[    40.265] (--) NVIDIA(GPU-0): 
+[    40.385] (==) NVIDIA(0): 
+[    40.385] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[    40.385] (==) NVIDIA(0):     will be used as the requested mode.
+[    40.385] (==) NVIDIA(0): 
+[    40.386] (II) NVIDIA(0): Validated MetaModes:
+[    40.386] (II) NVIDIA(0):     "DFP-3:nvidia-auto-select,DFP-2:nvidia-auto-select"
+[    40.386] (II) NVIDIA(0): Virtual screen size determined to be 5760 x 2160
+[    40.449] (--) NVIDIA(0): DPI set to (159, 156); computed from "UseEdidDpi" X config
+[    40.449] (--) NVIDIA(0):     option
+[    40.449] (II) UnloadModule: "modesetting"
+[    40.449] (II) Unloading modesetting
+[    40.449] (WW) NVIDIA: Failed to bind sideband socket to
+[    40.449] (WW) NVIDIA:     '/var/run/nvidia-xdriver-1e67644b' Permission denied
+[    40.449] (II) NVIDIA: Reserving 24576.00 MB of virtual memory for indirect memory
+[    40.449] (II) NVIDIA:     access.
+[    40.451] (II) NVIDIA(0): ACPI: failed to connect to the ACPI event daemon; the daemon
+[    40.451] (II) NVIDIA(0):     may not be running or the "AcpidSocketPath" X
+[    40.451] (II) NVIDIA(0):     configuration option may not be set correctly.  When the
+[    40.451] (II) NVIDIA(0):     ACPI event daemon is available, the NVIDIA X driver will
+[    40.451] (II) NVIDIA(0):     try to use it to receive ACPI event notifications.  For
+[    40.451] (II) NVIDIA(0):     details, please see the "ConnectToAcpid" and
+[    40.451] (II) NVIDIA(0):     "AcpidSocketPath" X configuration options in Appendix B: X
+[    40.451] (II) NVIDIA(0):     Config Options in the README.
+[    40.459] (II) NVIDIA(0): Setting mode "DFP-3:nvidia-auto-select,DFP-2:nvidia-auto-select"
+[    40.554] (==) NVIDIA(0): Disabling shared memory pixmaps
+[    40.554] (==) NVIDIA(0): Backing store enabled
+[    40.554] (==) NVIDIA(0): Silken mouse enabled
+[    40.554] (==) NVIDIA(0): DPMS enabled
+[    40.554] (II) Loading sub module "dri2"
+[    40.554] (II) LoadModule: "dri2"
+[    40.554] (II) Module "dri2" already built-in
+[    40.554] (II) NVIDIA(0): [DRI2] Setup complete
+[    40.554] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[    40.554] (II) Initializing extension Generic Event Extension
+[    40.554] (II) Initializing extension SHAPE
+[    40.554] (II) Initializing extension MIT-SHM
+[    40.554] (II) Initializing extension XInputExtension
+[    40.555] (II) Initializing extension XTEST
+[    40.555] (II) Initializing extension BIG-REQUESTS
+[    40.555] (II) Initializing extension SYNC
+[    40.555] (II) Initializing extension XKEYBOARD
+[    40.555] (II) Initializing extension XC-MISC
+[    40.555] (II) Initializing extension SECURITY
+[    40.555] (II) Initializing extension XFIXES
+[    40.555] (II) Initializing extension RENDER
+[    40.555] (II) Initializing extension RANDR
+[    40.555] (II) Initializing extension COMPOSITE
+[    40.555] (II) Initializing extension DAMAGE
+[    40.555] (II) Initializing extension MIT-SCREEN-SAVER
+[    40.555] (II) Initializing extension DOUBLE-BUFFER
+[    40.555] (II) Initializing extension RECORD
+[    40.555] (II) Initializing extension DPMS
+[    40.555] (II) Initializing extension Present
+[    40.555] (II) Initializing extension DRI3
+[    40.555] (II) Initializing extension X-Resource
+[    40.555] (II) Initializing extension XVideo
+[    40.555] (II) Initializing extension XVideo-MotionCompensation
+[    40.555] (II) Initializing extension GLX
+[    40.555] (II) Initializing extension GLX
+[    40.555] (II) Indirect GLX disabled.
+[    40.555] (II) GLX: Another vendor is already registered for screen 0
+[    40.555] (II) Initializing extension XFree86-VidModeExtension
+[    40.555] (II) Initializing extension XFree86-DGA
+[    40.555] (II) Initializing extension XFree86-DRI
+[    40.555] (II) Initializing extension DRI2
+[    40.555] (II) Initializing extension NV-GLX
+[    40.555] (II) Initializing extension NV-CONTROL
+[    40.556] (II) Initializing extension XINERAMA
+[    40.578] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    40.578] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    40.578] (II) LoadModule: "libinput"
+[    40.578] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    40.579] (II) Module libinput: vendor="X.Org Foundation"
+[    40.579] 	compiled for 1.21.1.8, module version = 1.3.0
+[    40.579] 	Module class: X.Org XInput Driver
+[    40.579] 	ABI class: X.Org XInput driver, version 24.4
+[    40.579] (II) Using input driver 'libinput' for 'Power Button'
+[    40.579] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 38 paused 0
+[    40.579] (**) Power Button: always reports core events
+[    40.579] (**) Option "Device" "/dev/input/event1"
+[    40.580] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    40.580] (II) event1  - Power Button: device is a keyboard
+[    40.580] (II) event1  - Power Button: device removed
+[    40.580] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[    40.580] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    40.580] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    40.580] (II) event1  - Power Button: device is a keyboard
+[    40.581] (II) config/udev: Adding input device Video Bus (/dev/input/event2)
+[    40.581] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    40.581] (II) Using input driver 'libinput' for 'Video Bus'
+[    40.581] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 41 paused 0
+[    40.581] (**) Video Bus: always reports core events
+[    40.581] (**) Option "Device" "/dev/input/event2"
+[    40.581] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+[    40.581] (II) event2  - Video Bus: device is a keyboard
+[    40.581] (II) event2  - Video Bus: device removed
+[    40.581] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:20/LNXVIDEO:00/input/input2/event2"
+[    40.581] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    40.582] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+[    40.582] (II) event2  - Video Bus: device is a keyboard
+[    40.582] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    40.582] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    40.582] (II) Using input driver 'libinput' for 'Power Button'
+[    40.582] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 42 paused 0
+[    40.582] (**) Power Button: always reports core events
+[    40.582] (**) Option "Device" "/dev/input/event0"
+[    40.582] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    40.582] (II) event0  - Power Button: device is a keyboard
+[    40.582] (II) event0  - Power Button: device removed
+[    40.582] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    40.582] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    40.583] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    40.583] (II) event0  - Power Button: device is a keyboard
+[    40.583] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event6)
+[    40.583] (II) No input driver specified, ignoring this device.
+[    40.583] (II) This device may have been added with another device file.
+[    40.583] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event7)
+[    40.583] (II) No input driver specified, ignoring this device.
+[    40.583] (II) This device may have been added with another device file.
+[    40.583] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event4)
+[    40.583] (II) No input driver specified, ignoring this device.
+[    40.583] (II) This device may have been added with another device file.
+[    40.583] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event5)
+[    40.583] (II) No input driver specified, ignoring this device.
+[    40.583] (II) This device may have been added with another device file.
+[    40.583] (II) config/udev: Adding input device SteelSeries Stratus Duo (/dev/input/event20)
+[    40.583] (**) SteelSeries Stratus Duo: Applying InputClass "libinput pointer catchall"
+[    40.583] (II) Using input driver 'libinput' for 'SteelSeries Stratus Duo'
+[    40.639] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 43 paused 0
+[    40.639] (**) SteelSeries Stratus Duo: always reports core events
+[    40.639] (**) Option "Device" "/dev/input/event20"
+[    40.640] (II) event20 - SteelSeries Stratus Duo: is tagged by udev as: Mouse
+[    40.640] (II) event20 - SteelSeries Stratus Duo: device is a pointer
+[    40.640] (II) event20 - SteelSeries Stratus Duo: device removed
+[    40.640] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    40.640] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    40.640] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    40.640] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-2/3-2:1.1/0003:1038:1430.0001/input/input20/event20"
+[    40.640] (II) XINPUT: Adding extended input device "SteelSeries Stratus Duo" (type: MOUSE, id 9)
+[    40.640] (**) Option "AccelerationScheme" "none"
+[    40.640] (**) SteelSeries Stratus Duo: (accel) selected scheme none/0
+[    40.640] (**) SteelSeries Stratus Duo: (accel) acceleration factor: 2.000
+[    40.640] (**) SteelSeries Stratus Duo: (accel) acceleration threshold: 4
+[    40.641] (II) event20 - SteelSeries Stratus Duo: is tagged by udev as: Mouse
+[    40.641] (II) event20 - SteelSeries Stratus Duo: device is a pointer
+[    40.641] (II) config/udev: Adding input device SteelSeries Stratus Duo (/dev/input/mouse0)
+[    40.641] (II) No input driver specified, ignoring this device.
+[    40.641] (II) This device may have been added with another device file.
+[    40.641] (II) config/udev: Adding input device Keychron Keychron K8 (/dev/input/event24)
+[    40.641] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[    40.641] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[    40.642] (II) systemd-logind: got fd for /dev/input/event24 13:88 fd 44 paused 0
+[    40.642] (**) Keychron Keychron K8: always reports core events
+[    40.642] (**) Option "Device" "/dev/input/event24"
+[    40.642] (II) event24 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[    40.642] (II) event24 - Keychron Keychron K8: device is a keyboard
+[    40.642] (II) event24 - Keychron Keychron K8: device removed
+[    40.642] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.0/0003:05AC:024F.0004/input/input26/event24"
+[    40.642] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: KEYBOARD, id 10)
+[    40.643] (II) event24 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[    40.643] (II) event24 - Keychron Keychron K8: device is a keyboard
+[    40.643] (II) config/udev: Adding input device Keychron Keychron K8 (/dev/input/event25)
+[    40.643] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[    40.643] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[    40.644] (II) systemd-logind: got fd for /dev/input/event25 13:89 fd 45 paused 0
+[    40.644] (**) Keychron Keychron K8: always reports core events
+[    40.644] (**) Option "Device" "/dev/input/event25"
+[    40.644] (II) event25 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[    40.644] (II) event25 - Keychron Keychron K8: device is a keyboard
+[    40.644] (II) event25 - Keychron Keychron K8: device removed
+[    40.644] (II) libinput: Keychron Keychron K8: needs a virtual subdevice
+[    40.644] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.1/0003:05AC:024F.0005/input/input27/event25"
+[    40.644] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: MOUSE, id 11)
+[    40.644] (**) Option "AccelerationScheme" "none"
+[    40.644] (**) Keychron Keychron K8: (accel) selected scheme none/0
+[    40.644] (**) Keychron Keychron K8: (accel) acceleration factor: 2.000
+[    40.644] (**) Keychron Keychron K8: (accel) acceleration threshold: 4
+[    40.645] (II) event25 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[    40.645] (II) event25 - Keychron Keychron K8: device is a keyboard
+[    40.646] (II) config/udev: Adding input device Logitech G502 HERO SE (/dev/input/event22)
+[    40.646] (**) Logitech G502 HERO SE: Applying InputClass "libinput pointer catchall"
+[    40.646] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE'
+[    40.702] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 46 paused 0
+[    40.702] (**) Logitech G502 HERO SE: always reports core events
+[    40.702] (**) Option "Device" "/dev/input/event22"
+[    40.703] (II) event22 - Logitech G502 HERO SE: is tagged by udev as: Mouse
+[    40.703] (II) event22 - Logitech G502 HERO SE: device set to 2400 DPI
+[    40.703] (II) event22 - Logitech G502 HERO SE: device is a pointer
+[    40.703] (II) event22 - Logitech G502 HERO SE: device removed
+[    40.703] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    40.703] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    40.703] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    40.703] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.0/0003:046D:C08B.0006/input/input22/event22"
+[    40.703] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE" (type: MOUSE, id 12)
+[    40.703] (**) Option "AccelerationScheme" "none"
+[    40.703] (**) Logitech G502 HERO SE: (accel) selected scheme none/0
+[    40.703] (**) Logitech G502 HERO SE: (accel) acceleration factor: 2.000
+[    40.703] (**) Logitech G502 HERO SE: (accel) acceleration threshold: 4
+[    40.704] (II) event22 - Logitech G502 HERO SE: is tagged by udev as: Mouse
+[    40.704] (II) event22 - Logitech G502 HERO SE: device set to 2400 DPI
+[    40.704] (II) event22 - Logitech G502 HERO SE: device is a pointer
+[    40.704] (II) config/udev: Adding input device Logitech G502 HERO SE (/dev/input/mouse1)
+[    40.704] (II) No input driver specified, ignoring this device.
+[    40.704] (II) This device may have been added with another device file.
+[    40.705] (II) config/udev: Adding input device Logitech G502 HERO SE Keyboard (/dev/input/event23)
+[    40.705] (**) Logitech G502 HERO SE Keyboard: Applying InputClass "libinput keyboard catchall"
+[    40.705] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE Keyboard'
+[    40.705] (II) systemd-logind: got fd for /dev/input/event23 13:87 fd 47 paused 0
+[    40.705] (**) Logitech G502 HERO SE Keyboard: always reports core events
+[    40.705] (**) Option "Device" "/dev/input/event23"
+[    40.706] (II) event23 - Logitech G502 HERO SE Keyboard: is tagged by udev as: Keyboard
+[    40.706] (II) event23 - Logitech G502 HERO SE Keyboard: device is a keyboard
+[    40.707] (II) event23 - Logitech G502 HERO SE Keyboard: device removed
+[    40.707] (II) libinput: Logitech G502 HERO SE Keyboard: needs a virtual subdevice
+[    40.707] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.1/0003:046D:C08B.0007/input/input23/event23"
+[    40.707] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE Keyboard" (type: MOUSE, id 13)
+[    40.707] (**) Option "AccelerationScheme" "none"
+[    40.707] (**) Logitech G502 HERO SE Keyboard: (accel) selected scheme none/0
+[    40.707] (**) Logitech G502 HERO SE Keyboard: (accel) acceleration factor: 2.000
+[    40.707] (**) Logitech G502 HERO SE Keyboard: (accel) acceleration threshold: 4
+[    40.708] (II) event23 - Logitech G502 HERO SE Keyboard: is tagged by udev as: Keyboard
+[    40.708] (II) event23 - Logitech G502 HERO SE Keyboard: device is a keyboard
+[    40.709] (II) config/udev: Adding input device MSI MYSTIC LIGHT  (/dev/input/event21)
+[    40.709] (II) No input driver specified, ignoring this device.
+[    40.709] (II) This device may have been added with another device file.
+[    40.709] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event8)
+[    40.709] (II) No input driver specified, ignoring this device.
+[    40.709] (II) This device may have been added with another device file.
+[    40.709] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=7 (/dev/input/event9)
+[    40.709] (II) No input driver specified, ignoring this device.
+[    40.709] (II) This device may have been added with another device file.
+[    40.709] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=8 (/dev/input/event10)
+[    40.709] (II) No input driver specified, ignoring this device.
+[    40.709] (II) This device may have been added with another device file.
+[    40.709] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=9 (/dev/input/event11)
+[    40.709] (II) No input driver specified, ignoring this device.
+[    40.709] (II) This device may have been added with another device file.
+[    40.709] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event12)
+[    40.709] (II) No input driver specified, ignoring this device.
+[    40.709] (II) This device may have been added with another device file.
+[    40.709] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event13)
+[    40.709] (II) No input driver specified, ignoring this device.
+[    40.709] (II) This device may have been added with another device file.
+[    40.709] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event14)
+[    40.709] (II) No input driver specified, ignoring this device.
+[    40.709] (II) This device may have been added with another device file.
+[    40.710] (II) config/udev: Adding input device HD-Audio Generic Line Out Front (/dev/input/event15)
+[    40.710] (II) No input driver specified, ignoring this device.
+[    40.710] (II) This device may have been added with another device file.
+[    40.710] (II) config/udev: Adding input device HD-Audio Generic Line Out Surround (/dev/input/event16)
+[    40.710] (II) No input driver specified, ignoring this device.
+[    40.710] (II) This device may have been added with another device file.
+[    40.710] (II) config/udev: Adding input device HD-Audio Generic Line Out CLFE (/dev/input/event17)
+[    40.710] (II) No input driver specified, ignoring this device.
+[    40.710] (II) This device may have been added with another device file.
+[    40.710] (II) config/udev: Adding input device HD-Audio Generic Line Out Side (/dev/input/event18)
+[    40.710] (II) No input driver specified, ignoring this device.
+[    40.710] (II) This device may have been added with another device file.
+[    40.710] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event19)
+[    40.710] (II) No input driver specified, ignoring this device.
+[    40.710] (II) This device may have been added with another device file.
+[    40.710] (II) config/udev: Adding input device PC Speaker (/dev/input/event3)
+[    40.710] (II) No input driver specified, ignoring this device.
+[    40.710] (II) This device may have been added with another device file.
+[    40.712] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[    40.712] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[    40.712] (II) systemd-logind: returning pre-existing fd for /dev/input/event25 13:89
+[    40.712] (**) Keychron Keychron K8: always reports core events
+[    40.712] (**) Option "Device" "/dev/input/event25"
+[    40.712] (II) libinput: Keychron Keychron K8: is a virtual subdevice
+[    40.712] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.1/0003:05AC:024F.0005/input/input27/event25"
+[    40.712] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: KEYBOARD, id 14)
+[    40.712] (**) Logitech G502 HERO SE Keyboard: Applying InputClass "libinput keyboard catchall"
+[    40.712] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE Keyboard'
+[    40.712] (II) systemd-logind: returning pre-existing fd for /dev/input/event23 13:87
+[    40.712] (**) Logitech G502 HERO SE Keyboard: always reports core events
+[    40.712] (**) Option "Device" "/dev/input/event23"
+[    40.712] (II) libinput: Logitech G502 HERO SE Keyboard: is a virtual subdevice
+[    40.712] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.1/0003:046D:C08B.0007/input/input23/event23"
+[    40.712] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE Keyboard" (type: KEYBOARD, id 15)
+[    40.896] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    40.896] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    40.896] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[    40.896] (--) NVIDIA(GPU-0): 
+[    40.896] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    40.896] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    40.896] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    40.896] (--) NVIDIA(GPU-0): 
+[    40.940] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): connected
+[    40.940] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): Internal TMDS
+[    40.940] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): 600.0 MHz maximum pixel clock
+[    40.940] (--) NVIDIA(GPU-0): 
+[    40.941] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): connected
+[    40.941] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): Internal DisplayPort
+[    40.941] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): 2660.0 MHz maximum pixel clock
+[    40.941] (--) NVIDIA(GPU-0): 
+[    40.942] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    40.942] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    40.942] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    40.943] (--) NVIDIA(GPU-0): 
+[    40.943] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    40.943] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    40.943] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    40.943] (--) NVIDIA(GPU-0): 
+[    40.943] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    40.943] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    40.943] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    40.943] (--) NVIDIA(GPU-0): 
+[    40.943] (--) NVIDIA(GPU-0): DFP-7: disconnected
+[    40.943] (--) NVIDIA(GPU-0): DFP-7: Internal DisplayPort
+[    40.943] (--) NVIDIA(GPU-0): DFP-7: 2660.0 MHz maximum pixel clock
+[    40.943] (--) NVIDIA(GPU-0): 
+[    41.044] (II) NVIDIA(0): Setting mode "HDMI-0: nvidia-auto-select @1920x1080 +3840+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"
+[    41.116] (II) NVIDIA(0): Setting mode "NULL"
+[    41.155] (II) NVIDIA(0): Setting mode "DP-2: 2560x1440 @2560x1440 +0+0 {ViewPortIn=2560x1440, ViewPortOut=2560x1440+0+0}"
+[    41.210] (II) NVIDIA(0): Setting mode "DP-2: 2560x1440 @2560x1440 +0+0 {ViewPortIn=2560x1440, ViewPortOut=2560x1440+0+0}, HDMI-0: nvidia-auto-select @1920x1080 +2560+207 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"
+[    41.626] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    41.626] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    41.626] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[    41.626] (--) NVIDIA(GPU-0): 
+[    41.626] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    41.626] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    41.626] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    41.626] (--) NVIDIA(GPU-0): 
+[    41.670] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): connected
+[    41.670] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): Internal TMDS
+[    41.670] (--) NVIDIA(GPU-0): Samsung S23C350 (DFP-2): 600.0 MHz maximum pixel clock
+[    41.670] (--) NVIDIA(GPU-0): 
+[    41.670] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): connected
+[    41.670] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): Internal DisplayPort
+[    41.670] (--) NVIDIA(GPU-0): Samsung U28D590 (DFP-3): 2660.0 MHz maximum pixel clock
+[    41.670] (--) NVIDIA(GPU-0): 
+[    41.672] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    41.672] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    41.672] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    41.672] (--) NVIDIA(GPU-0): 
+[    41.672] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    41.672] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    41.672] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    41.672] (--) NVIDIA(GPU-0): 
+[    41.672] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    41.672] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    41.672] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    41.672] (--) NVIDIA(GPU-0): 
+[    41.672] (--) NVIDIA(GPU-0): DFP-7: disconnected
+[    41.672] (--) NVIDIA(GPU-0): DFP-7: Internal DisplayPort
+[    41.672] (--) NVIDIA(GPU-0): DFP-7: 2660.0 MHz maximum pixel clock
+[    41.672] (--) NVIDIA(GPU-0): 
+[   139.110] (II) config/udev: removing device Power Button
+[   139.110] (**) Option "fd" "38"
+[   139.110] (II) event1  - Power Button: device removed
+[   139.111] (II) UnloadModule: "libinput"
+[   139.111] (II) systemd-logind: releasing fd for 13:65
+[   139.163] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   139.163] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   139.163] (II) Using input driver 'libinput' for 'Power Button'
+[   139.163] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 61 paused 0
+[   139.163] (**) Power Button: always reports core events
+[   139.163] (**) Option "Device" "/dev/input/event1"
+[   139.163] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   139.163] (II) event1  - Power Button: device is a keyboard
+[   139.163] (II) event1  - Power Button: device removed
+[   139.163] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[   139.163] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   139.164] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   139.164] (II) event1  - Power Button: device is a keyboard
+[   139.164] (II) config/udev: Adding input device SteelSeries Stratus Duo (/dev/input/mouse0)
+[   139.164] (II) No input driver specified, ignoring this device.
+[   139.164] (II) This device may have been added with another device file.
+[   139.164] (II) config/udev: Adding input device Logitech G502 HERO SE (/dev/input/mouse1)
+[   139.164] (II) No input driver specified, ignoring this device.
+[   139.164] (II) This device may have been added with another device file.
+[   139.165] (II) config/udev: removing device Video Bus
+[   139.165] (**) Option "fd" "41"
+[   139.165] (II) event2  - Video Bus: device removed
+[   139.165] (II) UnloadModule: "libinput"
+[   139.165] (II) systemd-logind: releasing fd for 13:66
+[   139.232] (II) config/udev: Adding input device Video Bus (/dev/input/event2)
+[   139.232] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   139.232] (II) Using input driver 'libinput' for 'Video Bus'
+[   139.233] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 41 paused 0
+[   139.233] (**) Video Bus: always reports core events
+[   139.233] (**) Option "Device" "/dev/input/event2"
+[   139.233] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+[   139.233] (II) event2  - Video Bus: device is a keyboard
+[   139.233] (II) event2  - Video Bus: device removed
+[   139.233] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:20/LNXVIDEO:00/input/input2/event2"
+[   139.233] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[   139.233] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+[   139.233] (II) event2  - Video Bus: device is a keyboard
+[   139.234] (II) config/udev: removing device Power Button
+[   139.234] (**) Option "fd" "42"
+[   139.234] (II) event0  - Power Button: device removed
+[   139.234] (II) UnloadModule: "libinput"
+[   139.234] (II) systemd-logind: releasing fd for 13:64
+[   139.266] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[   139.266] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   139.266] (II) Using input driver 'libinput' for 'Power Button'
+[   139.266] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 42 paused 0
+[   139.266] (**) Power Button: always reports core events
+[   139.266] (**) Option "Device" "/dev/input/event0"
+[   139.266] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   139.266] (II) event0  - Power Button: device is a keyboard
+[   139.266] (II) event0  - Power Button: device removed
+[   139.266] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[   139.266] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[   139.267] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   139.267] (II) event0  - Power Button: device is a keyboard
+[   139.267] (II) config/udev: removing device SteelSeries Stratus Duo
+[   139.267] (**) Option "fd" "43"
+[   139.267] (II) event20 - SteelSeries Stratus Duo: device removed
+[   139.267] (II) UnloadModule: "libinput"
+[   139.267] (II) systemd-logind: releasing fd for 13:84
+[   139.316] (II) config/udev: Adding input device SteelSeries Stratus Duo (/dev/input/event20)
+[   139.316] (**) SteelSeries Stratus Duo: Applying InputClass "libinput pointer catchall"
+[   139.316] (II) Using input driver 'libinput' for 'SteelSeries Stratus Duo'
+[   139.372] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 43 paused 0
+[   139.372] (**) SteelSeries Stratus Duo: always reports core events
+[   139.372] (**) Option "Device" "/dev/input/event20"
+[   139.373] (II) event20 - SteelSeries Stratus Duo: is tagged by udev as: Mouse
+[   139.373] (II) event20 - SteelSeries Stratus Duo: device is a pointer
+[   139.373] (II) event20 - SteelSeries Stratus Duo: device removed
+[   139.373] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   139.373] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   139.373] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   139.373] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-2/3-2:1.1/0003:1038:1430.0001/input/input20/event20"
+[   139.373] (II) XINPUT: Adding extended input device "SteelSeries Stratus Duo" (type: MOUSE, id 9)
+[   139.374] (**) Option "AccelerationScheme" "none"
+[   139.374] (**) SteelSeries Stratus Duo: (accel) selected scheme none/0
+[   139.374] (**) SteelSeries Stratus Duo: (accel) acceleration factor: 2.000
+[   139.374] (**) SteelSeries Stratus Duo: (accel) acceleration threshold: 4
+[   139.375] (II) event20 - SteelSeries Stratus Duo: is tagged by udev as: Mouse
+[   139.375] (II) event20 - SteelSeries Stratus Duo: device is a pointer
+[   139.375] (II) config/udev: removing device Keychron Keychron K8
+[   139.375] (**) Option "fd" "44"
+[   139.375] (II) event24 - Keychron Keychron K8: device removed
+[   139.375] (II) UnloadModule: "libinput"
+[   139.375] (II) systemd-logind: releasing fd for 13:88
+[   139.422] (II) config/udev: Adding input device Keychron Keychron K8 (/dev/input/event24)
+[   139.422] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[   139.422] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[   139.423] (II) systemd-logind: got fd for /dev/input/event24 13:88 fd 44 paused 0
+[   139.423] (**) Keychron Keychron K8: always reports core events
+[   139.423] (**) Option "Device" "/dev/input/event24"
+[   139.423] (II) event24 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[   139.423] (II) event24 - Keychron Keychron K8: device is a keyboard
+[   139.424] (II) event24 - Keychron Keychron K8: device removed
+[   139.424] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.0/0003:05AC:024F.0004/input/input26/event24"
+[   139.424] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: KEYBOARD, id 10)
+[   139.424] (II) event24 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[   139.424] (II) event24 - Keychron Keychron K8: device is a keyboard
+[   139.424] (II) config/udev: removing device Logitech G502 HERO SE
+[   139.424] (**) Option "fd" "46"
+[   139.424] (II) event22 - Logitech G502 HERO SE: device removed
+[   139.425] (II) UnloadModule: "libinput"
+[   139.425] (II) systemd-logind: releasing fd for 13:86
+[   139.499] (II) config/udev: Adding input device Logitech G502 HERO SE (/dev/input/event22)
+[   139.499] (**) Logitech G502 HERO SE: Applying InputClass "libinput pointer catchall"
+[   139.499] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE'
+[   139.556] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 46 paused 0
+[   139.556] (**) Logitech G502 HERO SE: always reports core events
+[   139.556] (**) Option "Device" "/dev/input/event22"
+[   139.557] (II) event22 - Logitech G502 HERO SE: is tagged by udev as: Mouse
+[   139.557] (II) event22 - Logitech G502 HERO SE: device set to 2400 DPI
+[   139.557] (II) event22 - Logitech G502 HERO SE: device is a pointer
+[   139.557] (II) event22 - Logitech G502 HERO SE: device removed
+[   139.557] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   139.557] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   139.557] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   139.557] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.0/0003:046D:C08B.0006/input/input22/event22"
+[   139.557] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE" (type: MOUSE, id 12)
+[   139.557] (**) Option "AccelerationScheme" "none"
+[   139.557] (**) Logitech G502 HERO SE: (accel) selected scheme none/0
+[   139.558] (**) Logitech G502 HERO SE: (accel) acceleration factor: 2.000
+[   139.558] (**) Logitech G502 HERO SE: (accel) acceleration threshold: 4
+[   139.559] (II) event22 - Logitech G502 HERO SE: is tagged by udev as: Mouse
+[   139.559] (II) event22 - Logitech G502 HERO SE: device set to 2400 DPI
+[   139.559] (II) event22 - Logitech G502 HERO SE: device is a pointer
+[   139.559] (II) config/udev: removing device Logitech G502 HERO SE Keyboard
+[   139.559] (**) Option "fd" "47"
+[   139.559] (II) UnloadModule: "libinput"
+[   139.559] (II) systemd-logind: not releasing fd for 13:87, still in use
+[   139.559] (II) config/udev: removing device Logitech G502 HERO SE Keyboard
+[   139.559] (**) Option "fd" "47"
+[   139.559] (II) event23 - Logitech G502 HERO SE Keyboard: device removed
+[   139.560] (II) UnloadModule: "libinput"
+[   139.560] (II) systemd-logind: releasing fd for 13:87
+[   139.589] (II) config/udev: Adding input device Logitech G502 HERO SE Keyboard (/dev/input/event23)
+[   139.589] (**) Logitech G502 HERO SE Keyboard: Applying InputClass "libinput keyboard catchall"
+[   139.589] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE Keyboard'
+[   139.590] (II) systemd-logind: got fd for /dev/input/event23 13:87 fd 47 paused 0
+[   139.590] (**) Logitech G502 HERO SE Keyboard: always reports core events
+[   139.590] (**) Option "Device" "/dev/input/event23"
+[   139.591] (II) event23 - Logitech G502 HERO SE Keyboard: is tagged by udev as: Keyboard
+[   139.591] (II) event23 - Logitech G502 HERO SE Keyboard: device is a keyboard
+[   139.591] (II) event23 - Logitech G502 HERO SE Keyboard: device removed
+[   139.591] (II) libinput: Logitech G502 HERO SE Keyboard: needs a virtual subdevice
+[   139.591] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.1/0003:046D:C08B.0007/input/input23/event23"
+[   139.591] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE Keyboard" (type: MOUSE, id 13)
+[   139.591] (**) Option "AccelerationScheme" "none"
+[   139.592] (**) Logitech G502 HERO SE Keyboard: (accel) selected scheme none/0
+[   139.592] (**) Logitech G502 HERO SE Keyboard: (accel) acceleration factor: 2.000
+[   139.592] (**) Logitech G502 HERO SE Keyboard: (accel) acceleration threshold: 4
+[   139.593] (II) event23 - Logitech G502 HERO SE Keyboard: is tagged by udev as: Keyboard
+[   139.593] (II) event23 - Logitech G502 HERO SE Keyboard: device is a keyboard
+[   139.593] (**) Logitech G502 HERO SE Keyboard: Applying InputClass "libinput keyboard catchall"
+[   139.593] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE Keyboard'
+[   139.593] (II) systemd-logind: returning pre-existing fd for /dev/input/event23 13:87
+[   139.593] (**) Logitech G502 HERO SE Keyboard: always reports core events
+[   139.593] (**) Option "Device" "/dev/input/event23"
+[   139.593] (II) libinput: Logitech G502 HERO SE Keyboard: is a virtual subdevice
+[   139.593] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.1/0003:046D:C08B.0007/input/input23/event23"
+[   139.593] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE Keyboard" (type: KEYBOARD, id 15)
+[   139.593] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event5)
+[   139.593] (II) No input driver specified, ignoring this device.
+[   139.593] (II) This device may have been added with another device file.
+[   139.594] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event6)
+[   139.594] (II) No input driver specified, ignoring this device.
+[   139.594] (II) This device may have been added with another device file.
+[   139.594] (II) config/udev: removing device Keychron Keychron K8
+[   139.594] (**) Option "fd" "45"
+[   139.594] (II) UnloadModule: "libinput"
+[   139.594] (II) systemd-logind: not releasing fd for 13:89, still in use
+[   139.594] (II) config/udev: removing device Keychron Keychron K8
+[   139.594] (**) Option "fd" "45"
+[   139.594] (II) event25 - Keychron Keychron K8: device removed
+[   139.594] (II) UnloadModule: "libinput"
+[   139.594] (II) systemd-logind: releasing fd for 13:89
+[   139.639] (II) config/udev: Adding input device Keychron Keychron K8 (/dev/input/event25)
+[   139.639] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[   139.639] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[   139.640] (II) systemd-logind: got fd for /dev/input/event25 13:89 fd 45 paused 0
+[   139.640] (**) Keychron Keychron K8: always reports core events
+[   139.640] (**) Option "Device" "/dev/input/event25"
+[   139.641] (II) event25 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[   139.641] (II) event25 - Keychron Keychron K8: device is a keyboard
+[   139.641] (II) event25 - Keychron Keychron K8: device removed
+[   139.641] (II) libinput: Keychron Keychron K8: needs a virtual subdevice
+[   139.641] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.1/0003:05AC:024F.0005/input/input27/event25"
+[   139.641] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: MOUSE, id 11)
+[   139.641] (**) Option "AccelerationScheme" "none"
+[   139.642] (**) Keychron Keychron K8: (accel) selected scheme none/0
+[   139.642] (**) Keychron Keychron K8: (accel) acceleration factor: 2.000
+[   139.642] (**) Keychron Keychron K8: (accel) acceleration threshold: 4
+[   139.643] (II) event25 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[   139.643] (II) event25 - Keychron Keychron K8: device is a keyboard
+[   139.643] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[   139.643] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[   139.643] (II) systemd-logind: returning pre-existing fd for /dev/input/event25 13:89
+[   139.643] (**) Keychron Keychron K8: always reports core events
+[   139.643] (**) Option "Device" "/dev/input/event25"
+[   139.643] (II) libinput: Keychron Keychron K8: is a virtual subdevice
+[   139.643] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.1/0003:05AC:024F.0005/input/input27/event25"
+[   139.643] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: KEYBOARD, id 14)
+[   139.643] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event7)
+[   139.643] (II) No input driver specified, ignoring this device.
+[   139.643] (II) This device may have been added with another device file.
+[   139.644] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=7 (/dev/input/event9)
+[   139.644] (II) No input driver specified, ignoring this device.
+[   139.644] (II) This device may have been added with another device file.
+[   139.644] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event13)
+[   139.644] (II) No input driver specified, ignoring this device.
+[   139.644] (II) This device may have been added with another device file.
+[   139.644] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=9 (/dev/input/event11)
+[   139.644] (II) No input driver specified, ignoring this device.
+[   139.644] (II) This device may have been added with another device file.
+[   139.644] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=8 (/dev/input/event10)
+[   139.644] (II) No input driver specified, ignoring this device.
+[   139.644] (II) This device may have been added with another device file.
+[   139.644] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event19)
+[   139.644] (II) No input driver specified, ignoring this device.
+[   139.644] (II) This device may have been added with another device file.
+[   139.644] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event4)
+[   139.644] (II) No input driver specified, ignoring this device.
+[   139.644] (II) This device may have been added with another device file.
+[   139.645] (II) config/udev: Adding input device HD-Audio Generic Line Out Front (/dev/input/event15)
+[   139.645] (II) No input driver specified, ignoring this device.
+[   139.645] (II) This device may have been added with another device file.
+[   139.645] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event8)
+[   139.645] (II) No input driver specified, ignoring this device.
+[   139.645] (II) This device may have been added with another device file.
+[   139.645] (II) config/udev: Adding input device HD-Audio Generic Line Out Surround (/dev/input/event16)
+[   139.645] (II) No input driver specified, ignoring this device.
+[   139.645] (II) This device may have been added with another device file.
+[   139.645] (II) config/udev: Adding input device HD-Audio Generic Line Out Side (/dev/input/event18)
+[   139.645] (II) No input driver specified, ignoring this device.
+[   139.645] (II) This device may have been added with another device file.
+[   139.645] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event12)
+[   139.645] (II) No input driver specified, ignoring this device.
+[   139.645] (II) This device may have been added with another device file.
+[   139.645] (II) config/udev: Adding input device PC Speaker (/dev/input/event3)
+[   139.645] (II) No input driver specified, ignoring this device.
+[   139.645] (II) This device may have been added with another device file.
+[   139.646] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event14)
+[   139.646] (II) No input driver specified, ignoring this device.
+[   139.646] (II) This device may have been added with another device file.
+[   139.646] (II) config/udev: Adding input device HD-Audio Generic Line Out CLFE (/dev/input/event17)
+[   139.646] (II) No input driver specified, ignoring this device.
+[   139.646] (II) This device may have been added with another device file.
+[   139.646] (II) config/udev: Adding input device MSI MYSTIC LIGHT  (/dev/input/event21)
+[   139.646] (II) No input driver specified, ignoring this device.
+[   139.646] (II) This device may have been added with another device file.
+[   944.823] (II) config/udev: Adding input device Logitech G502 HERO SE (/dev/input/mouse1)
+[   944.823] (II) No input driver specified, ignoring this device.
+[   944.823] (II) This device may have been added with another device file.
+[   944.825] (II) config/udev: Adding input device SteelSeries Stratus Duo (/dev/input/mouse0)
+[   944.826] (II) No input driver specified, ignoring this device.
+[   944.826] (II) This device may have been added with another device file.
+[   944.843] (II) config/udev: removing device Power Button
+[   944.843] (**) Option "fd" "42"
+[   944.843] (II) event0  - Power Button: device removed
+[   944.843] (II) UnloadModule: "libinput"
+[   944.844] (II) systemd-logind: releasing fd for 13:64
+[   944.882] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[   944.882] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   944.882] (II) Using input driver 'libinput' for 'Power Button'
+[   944.882] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 68 paused 0
+[   944.882] (**) Power Button: always reports core events
+[   944.882] (**) Option "Device" "/dev/input/event0"
+[   944.883] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   944.883] (II) event0  - Power Button: device is a keyboard
+[   944.883] (II) event0  - Power Button: device removed
+[   944.883] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[   944.883] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[   944.883] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   944.883] (II) event0  - Power Button: device is a keyboard
+[   944.883] (II) config/udev: removing device Power Button
+[   944.883] (**) Option "fd" "61"
+[   944.883] (II) event1  - Power Button: device removed
+[   944.883] (II) UnloadModule: "libinput"
+[   944.883] (II) systemd-logind: releasing fd for 13:65
+[   944.919] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   944.919] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   944.919] (II) Using input driver 'libinput' for 'Power Button'
+[   944.919] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 61 paused 0
+[   944.919] (**) Power Button: always reports core events
+[   944.919] (**) Option "Device" "/dev/input/event1"
+[   944.919] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   944.919] (II) event1  - Power Button: device is a keyboard
+[   944.919] (II) event1  - Power Button: device removed
+[   944.919] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[   944.919] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   944.920] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   944.920] (II) event1  - Power Button: device is a keyboard
+[   944.920] (II) config/udev: removing device SteelSeries Stratus Duo
+[   944.920] (**) Option "fd" "43"
+[   944.920] (II) event20 - SteelSeries Stratus Duo: device removed
+[   944.920] (II) UnloadModule: "libinput"
+[   944.920] (II) systemd-logind: releasing fd for 13:84
+[   944.996] (II) config/udev: Adding input device SteelSeries Stratus Duo (/dev/input/event20)
+[   944.996] (**) SteelSeries Stratus Duo: Applying InputClass "libinput pointer catchall"
+[   944.996] (II) Using input driver 'libinput' for 'SteelSeries Stratus Duo'
+[   945.052] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 43 paused 0
+[   945.052] (**) SteelSeries Stratus Duo: always reports core events
+[   945.052] (**) Option "Device" "/dev/input/event20"
+[   945.053] (II) event20 - SteelSeries Stratus Duo: is tagged by udev as: Mouse
+[   945.053] (II) event20 - SteelSeries Stratus Duo: device is a pointer
+[   945.053] (II) event20 - SteelSeries Stratus Duo: device removed
+[   945.053] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   945.053] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   945.053] (II) libinput: SteelSeries Stratus Duo: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   945.053] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-2/3-2:1.1/0003:1038:1430.0001/input/input20/event20"
+[   945.053] (II) XINPUT: Adding extended input device "SteelSeries Stratus Duo" (type: MOUSE, id 9)
+[   945.053] (**) Option "AccelerationScheme" "none"
+[   945.053] (**) SteelSeries Stratus Duo: (accel) selected scheme none/0
+[   945.053] (**) SteelSeries Stratus Duo: (accel) acceleration factor: 2.000
+[   945.053] (**) SteelSeries Stratus Duo: (accel) acceleration threshold: 4
+[   945.054] (II) event20 - SteelSeries Stratus Duo: is tagged by udev as: Mouse
+[   945.054] (II) event20 - SteelSeries Stratus Duo: device is a pointer
+[   945.054] (II) config/udev: removing device Keychron Keychron K8
+[   945.054] (**) Option "fd" "44"
+[   945.054] (II) event24 - Keychron Keychron K8: device removed
+[   945.054] (II) UnloadModule: "libinput"
+[   945.054] (II) systemd-logind: releasing fd for 13:88
+[   945.089] (II) config/udev: Adding input device Keychron Keychron K8 (/dev/input/event24)
+[   945.089] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[   945.089] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[   945.089] (II) systemd-logind: got fd for /dev/input/event24 13:88 fd 44 paused 0
+[   945.090] (**) Keychron Keychron K8: always reports core events
+[   945.090] (**) Option "Device" "/dev/input/event24"
+[   945.091] (II) event24 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[   945.091] (II) event24 - Keychron Keychron K8: device is a keyboard
+[   945.091] (II) event24 - Keychron Keychron K8: device removed
+[   945.091] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.0/0003:05AC:024F.0004/input/input26/event24"
+[   945.091] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: KEYBOARD, id 10)
+[   945.092] (II) event24 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[   945.092] (II) event24 - Keychron Keychron K8: device is a keyboard
+[   945.092] (II) config/udev: removing device Logitech G502 HERO SE Keyboard
+[   945.093] (**) Option "fd" "47"
+[   945.093] (II) UnloadModule: "libinput"
+[   945.093] (II) systemd-logind: not releasing fd for 13:87, still in use
+[   945.093] (II) config/udev: removing device Logitech G502 HERO SE Keyboard
+[   945.093] (**) Option "fd" "47"
+[   945.093] (II) event23 - Logitech G502 HERO SE Keyboard: device removed
+[   945.093] (II) UnloadModule: "libinput"
+[   945.093] (II) systemd-logind: releasing fd for 13:87
+[   945.139] (II) config/udev: Adding input device Logitech G502 HERO SE Keyboard (/dev/input/event23)
+[   945.139] (**) Logitech G502 HERO SE Keyboard: Applying InputClass "libinput keyboard catchall"
+[   945.139] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE Keyboard'
+[   945.139] (II) systemd-logind: got fd for /dev/input/event23 13:87 fd 47 paused 0
+[   945.139] (**) Logitech G502 HERO SE Keyboard: always reports core events
+[   945.139] (**) Option "Device" "/dev/input/event23"
+[   945.141] (II) event23 - Logitech G502 HERO SE Keyboard: is tagged by udev as: Keyboard
+[   945.141] (II) event23 - Logitech G502 HERO SE Keyboard: device is a keyboard
+[   945.141] (II) event23 - Logitech G502 HERO SE Keyboard: device removed
+[   945.141] (II) libinput: Logitech G502 HERO SE Keyboard: needs a virtual subdevice
+[   945.141] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.1/0003:046D:C08B.0007/input/input23/event23"
+[   945.141] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE Keyboard" (type: MOUSE, id 13)
+[   945.141] (**) Option "AccelerationScheme" "none"
+[   945.141] (**) Logitech G502 HERO SE Keyboard: (accel) selected scheme none/0
+[   945.141] (**) Logitech G502 HERO SE Keyboard: (accel) acceleration factor: 2.000
+[   945.141] (**) Logitech G502 HERO SE Keyboard: (accel) acceleration threshold: 4
+[   945.142] (II) event23 - Logitech G502 HERO SE Keyboard: is tagged by udev as: Keyboard
+[   945.142] (II) event23 - Logitech G502 HERO SE Keyboard: device is a keyboard
+[   945.143] (**) Logitech G502 HERO SE Keyboard: Applying InputClass "libinput keyboard catchall"
+[   945.143] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE Keyboard'
+[   945.143] (II) systemd-logind: returning pre-existing fd for /dev/input/event23 13:87
+[   945.143] (**) Logitech G502 HERO SE Keyboard: always reports core events
+[   945.143] (**) Option "Device" "/dev/input/event23"
+[   945.143] (II) libinput: Logitech G502 HERO SE Keyboard: is a virtual subdevice
+[   945.143] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.1/0003:046D:C08B.0007/input/input23/event23"
+[   945.143] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE Keyboard" (type: KEYBOARD, id 15)
+[   945.143] (II) config/udev: removing device Video Bus
+[   945.143] (**) Option "fd" "41"
+[   945.143] (II) event2  - Video Bus: device removed
+[   945.143] (II) UnloadModule: "libinput"
+[   945.143] (II) systemd-logind: releasing fd for 13:66
+[   945.226] (II) config/udev: Adding input device Video Bus (/dev/input/event2)
+[   945.226] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   945.226] (II) Using input driver 'libinput' for 'Video Bus'
+[   945.226] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 42 paused 0
+[   945.226] (**) Video Bus: always reports core events
+[   945.226] (**) Option "Device" "/dev/input/event2"
+[   945.227] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+[   945.227] (II) event2  - Video Bus: device is a keyboard
+[   945.227] (II) event2  - Video Bus: device removed
+[   945.227] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:20/LNXVIDEO:00/input/input2/event2"
+[   945.227] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[   945.228] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+[   945.228] (II) event2  - Video Bus: device is a keyboard
+[   945.228] (II) config/udev: removing device Keychron Keychron K8
+[   945.228] (**) Option "fd" "45"
+[   945.228] (II) UnloadModule: "libinput"
+[   945.228] (II) systemd-logind: not releasing fd for 13:89, still in use
+[   945.228] (II) config/udev: removing device Keychron Keychron K8
+[   945.228] (**) Option "fd" "45"
+[   945.228] (II) event25 - Keychron Keychron K8: device removed
+[   945.229] (II) UnloadModule: "libinput"
+[   945.229] (II) systemd-logind: releasing fd for 13:89
+[   945.263] (II) config/udev: Adding input device Keychron Keychron K8 (/dev/input/event25)
+[   945.263] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[   945.263] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[   945.263] (II) systemd-logind: got fd for /dev/input/event25 13:89 fd 45 paused 0
+[   945.263] (**) Keychron Keychron K8: always reports core events
+[   945.263] (**) Option "Device" "/dev/input/event25"
+[   945.264] (II) event25 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[   945.264] (II) event25 - Keychron Keychron K8: device is a keyboard
+[   945.265] (II) event25 - Keychron Keychron K8: device removed
+[   945.265] (II) libinput: Keychron Keychron K8: needs a virtual subdevice
+[   945.265] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.1/0003:05AC:024F.0005/input/input27/event25"
+[   945.265] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: MOUSE, id 11)
+[   945.265] (**) Option "AccelerationScheme" "none"
+[   945.265] (**) Keychron Keychron K8: (accel) selected scheme none/0
+[   945.265] (**) Keychron Keychron K8: (accel) acceleration factor: 2.000
+[   945.265] (**) Keychron Keychron K8: (accel) acceleration threshold: 4
+[   945.266] (II) event25 - Keychron Keychron K8: is tagged by udev as: Keyboard
+[   945.266] (II) event25 - Keychron Keychron K8: device is a keyboard
+[   945.266] (**) Keychron Keychron K8: Applying InputClass "libinput keyboard catchall"
+[   945.266] (II) Using input driver 'libinput' for 'Keychron Keychron K8'
+[   945.266] (II) systemd-logind: returning pre-existing fd for /dev/input/event25 13:89
+[   945.266] (**) Keychron Keychron K8: always reports core events
+[   945.266] (**) Option "Device" "/dev/input/event25"
+[   945.266] (II) libinput: Keychron Keychron K8: is a virtual subdevice
+[   945.266] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.1/0003:05AC:024F.0005/input/input27/event25"
+[   945.266] (II) XINPUT: Adding extended input device "Keychron Keychron K8" (type: KEYBOARD, id 14)
+[   945.267] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event6)
+[   945.267] (II) No input driver specified, ignoring this device.
+[   945.267] (II) This device may have been added with another device file.
+[   945.267] (II) config/udev: removing device Logitech G502 HERO SE
+[   945.267] (**) Option "fd" "46"
+[   945.267] (II) event22 - Logitech G502 HERO SE: device removed
+[   945.268] (II) UnloadModule: "libinput"
+[   945.268] (II) systemd-logind: releasing fd for 13:86
+[   945.329] (II) config/udev: Adding input device Logitech G502 HERO SE (/dev/input/event22)
+[   945.329] (**) Logitech G502 HERO SE: Applying InputClass "libinput pointer catchall"
+[   945.329] (II) Using input driver 'libinput' for 'Logitech G502 HERO SE'
+[   945.386] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 46 paused 0
+[   945.386] (**) Logitech G502 HERO SE: always reports core events
+[   945.386] (**) Option "Device" "/dev/input/event22"
+[   945.387] (II) event22 - Logitech G502 HERO SE: is tagged by udev as: Mouse
+[   945.387] (II) event22 - Logitech G502 HERO SE: device set to 2400 DPI
+[   945.387] (II) event22 - Logitech G502 HERO SE: device is a pointer
+[   945.387] (II) event22 - Logitech G502 HERO SE: device removed
+[   945.387] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   945.387] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   945.387] (II) libinput: Logitech G502 HERO SE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   945.387] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.1/0000:03:00.0/0000:04:0c.0/0000:0e:00.0/usb3/3-5/3-5.1/3-5.1.4/3-5.1.4:1.0/0003:046D:C08B.0006/input/input22/event22"
+[   945.387] (II) XINPUT: Adding extended input device "Logitech G502 HERO SE" (type: MOUSE, id 12)
+[   945.387] (**) Option "AccelerationScheme" "none"
+[   945.387] (**) Logitech G502 HERO SE: (accel) selected scheme none/0
+[   945.387] (**) Logitech G502 HERO SE: (accel) acceleration factor: 2.000
+[   945.387] (**) Logitech G502 HERO SE: (accel) acceleration threshold: 4
+[   945.388] (II) event22 - Logitech G502 HERO SE: is tagged by udev as: Mouse
+[   945.388] (II) event22 - Logitech G502 HERO SE: device set to 2400 DPI
+[   945.388] (II) event22 - Logitech G502 HERO SE: device is a pointer
+[   945.389] (II) config/udev: Adding input device HD-Audio Generic Line Out Side (/dev/input/event18)
+[   945.389] (II) No input driver specified, ignoring this device.
+[   945.389] (II) This device may have been added with another device file.
+[   945.389] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=9 (/dev/input/event11)
+[   945.389] (II) No input driver specified, ignoring this device.
+[   945.389] (II) This device may have been added with another device file.
+[   945.389] (II) config/udev: Adding input device HD-Audio Generic Line Out Surround (/dev/input/event16)
+[   945.389] (II) No input driver specified, ignoring this device.
+[   945.389] (II) This device may have been added with another device file.
+[   945.389] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event19)
+[   945.389] (II) No input driver specified, ignoring this device.
+[   945.389] (II) This device may have been added with another device file.
+[   945.390] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event4)
+[   945.390] (II) No input driver specified, ignoring this device.
+[   945.390] (II) This device may have been added with another device file.
+[   945.390] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event5)
+[   945.390] (II) No input driver specified, ignoring this device.
+[   945.390] (II) This device may have been added with another device file.
+[   945.390] (II) config/udev: Adding input device HD-Audio Generic Line Out Front (/dev/input/event15)
+[   945.390] (II) No input driver specified, ignoring this device.
+[   945.390] (II) This device may have been added with another device file.
+[   945.390] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event7)
+[   945.390] (II) No input driver specified, ignoring this device.
+[   945.390] (II) This device may have been added with another device file.
+[   945.390] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event8)
+[   945.390] (II) No input driver specified, ignoring this device.
+[   945.390] (II) This device may have been added with another device file.
+[   945.390] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=8 (/dev/input/event10)
+[   945.390] (II) No input driver specified, ignoring this device.
+[   945.390] (II) This device may have been added with another device file.
+[   945.390] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event13)
+[   945.390] (II) No input driver specified, ignoring this device.
+[   945.390] (II) This device may have been added with another device file.
+[   945.391] (II) config/udev: Adding input device PC Speaker (/dev/input/event3)
+[   945.391] (II) No input driver specified, ignoring this device.
+[   945.391] (II) This device may have been added with another device file.
+[   945.391] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event12)
+[   945.391] (II) No input driver specified, ignoring this device.
+[   945.391] (II) This device may have been added with another device file.
+[   945.391] (II) config/udev: Adding input device HD-Audio Generic Line Out CLFE (/dev/input/event17)
+[   945.391] (II) No input driver specified, ignoring this device.
+[   945.391] (II) This device may have been added with another device file.
+[   945.391] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event14)
+[   945.391] (II) No input driver specified, ignoring this device.
+[   945.391] (II) This device may have been added with another device file.
+[   945.391] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=7 (/dev/input/event9)
+[   945.391] (II) No input driver specified, ignoring this device.
+[   945.391] (II) This device may have been added with another device file.
+[   945.391] (II) config/udev: Adding input device MSI MYSTIC LIGHT  (/dev/input/event21)
+[   945.391] (II) No input driver specified, ignoring this device.
+[   945.392] (II) This device may have been added with another device file.
